@@ -1,13 +1,10 @@
 package oop_108839_FarellTimothy.week01
 
-fun main(args: Array<String>) {
+fun main() { // args dihapus
     val radius = 7.0
     val pi = 3.14
     val area = pi * radius * radius
-
-    // Menggunakan String Template $
     println("Radius: $radius, Area: $area")
-    checkSize(area)
     println(checkSize(area))
 }
 

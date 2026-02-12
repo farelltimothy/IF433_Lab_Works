@@ -5,3 +5,5 @@ fun main() {
     val price = 600000
     // Lanjut ke langkah berikutnya...
 }
+
+fun calculateDiscount(price: Int) = if (price > 500000) 20 else 10

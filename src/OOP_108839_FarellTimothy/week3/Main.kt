@@ -15,7 +15,7 @@ fun main() {
 
     // Mengetes setter damage
     println("--- Testing Weapon Damage ---")
-    w.damage = -50
+    w.damage = 999
     println("Weapon: ${w.name}, Damage: ${w.damage}, Tier: ${w.tier}")
 
     // Mengetes validasi (Langkah selanjutnya untuk Commit 8)

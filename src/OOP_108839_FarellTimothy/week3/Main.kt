@@ -15,10 +15,11 @@ fun main() {
 
     // Mengetes setter damage
     println("--- Testing Weapon Damage ---")
-    w.damage = 999
+    w.damage = 0
     println("Weapon: ${w.name}, Damage: ${w.damage}, Tier: ${w.tier}")
 
     // Mengetes validasi (Langkah selanjutnya untuk Commit 8)
     w.damage = 1200 // Ini akan memicu peringatan "Overpowered"
     println("Final Check -> Damage: ${w.damage}, Tier: ${w.tier}")
+
 }

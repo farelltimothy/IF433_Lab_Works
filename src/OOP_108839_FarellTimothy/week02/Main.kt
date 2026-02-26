@@ -72,4 +72,60 @@ fun main() {
     println("Buku    : ${pinjamanBaru.bookTitle}")
     println("Durasi  : ${pinjamanBaru.loanDuration} hari")
     println("Denda   : Rp${pinjamanBaru.calculateFine()}")
+
+    println("\n--- WELCOME TO THE ARENA ---")
+
+    print("Masukkan Nama Hero: ")
+    val heroName = scanner.nextLine()
+
+    print("Masukkan Base Damage Hero: ")
+    val heroDamage = scanner.nextInt()
+
+    // 1. Buat Objek Hero
+    val myHero = Hero(heroName, heroDamage)
+
+    // 2. Variabel bantuan untuk musuh
+    var enemyHp = 100
+    val enemyName = "Gorgon"
+
+    println("\n$heroName VS $enemyName DIMULAI!")
+
+    // 3. Main Loop: Selama Hero hidup DAN musuh hidup
+    while (myHero.isAlive() && enemyHp > 0) {
+        println("\n--- MENU AKSI ---")
+        println("1. Serang")
+        println("2. Kabur")
+        print("Pilih aksi: ")
+
+        when (scanner.nextInt()) {
+            1 -> {
+                // Hero menyerang musuh
+                myHero.attack(enemyName)
+                enemyHp -= myHero.baseDamage
+                if (enemyHp < 0) enemyHp = 0
+                println("HP $enemyName sisa: $enemyHp")
+
+                // Jika musuh belum mati, musuh membalas
+                if (enemyHp > 0) {
+                    val randomDamage = (10..20).random() // Damage acak 10-20
+                    myHero.takeDamage(randomDamage)
+                }
+            }
+            2 -> {
+                println("Anda memilih kabur dari pertarungan!")
+                break // Paksa loop berhenti
+            }
+            else -> println("Pilihan tidak valid!")
+        }
+    }
+
+    // 4. Pengumuman pemenang
+    println("\n--- PERTARUNGAN BERAKHIR ---")
+    if (myHero.isAlive() && enemyHp <= 0) {
+        println("SELAMAT! ${myHero.name} menang mutlak!")
+    } else if (!myHero.isAlive()) {
+        println("GAME OVER! ${myHero.name} telah gugur di medan perang.")
+    } else {
+        println("Pertarungan berakhir tanpa pemenang (Anda Kabur).")
+    }
 }

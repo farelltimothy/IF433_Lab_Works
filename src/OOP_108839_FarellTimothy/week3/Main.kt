@@ -22,4 +22,9 @@ fun main() {
     w.damage = 1200 // Ini akan memicu peringatan "Overpowered"
     println("Final Check -> Damage: ${w.damage}, Tier: ${w.tier}")
 
+    println("\n--- TASK 3: IMPLEMENTASI PLAYER ---")
+    val player = Player("Farell")
+    player.addXp(50)
+    player.addXp(60)
+
 }

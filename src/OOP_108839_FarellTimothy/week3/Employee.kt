@@ -18,8 +18,12 @@ class Employee(val name: String) {
         println("Kinerja $name meningkat! Rating: $performanceRating")
     }
 
-    // Kita buat fungsi khusus untuk mencetak status karena variabelnya private
     fun printStatus() {
         println("Karyawan: $name, Rating: $performanceRating")
     }
+
+    // --- TAMBAHKAN KODE INI (LANGKAH 5) ---
+    // Tax (Pajak) dihitung 10% dari gaji saat ini
+    val tax: Double
+        get() = salary * 0.1
 }

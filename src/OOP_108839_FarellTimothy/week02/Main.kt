@@ -41,4 +41,35 @@ fun main() {
             println("Pilihan ngawur, pendaftaran batal!")
         }
     }
+
+    val pinjaman1 = Loan("Kotlin for Beginners", "Farell", 5)
+    println("Buku: ${pinjaman1.bookTitle}, Denda: Rp${pinjaman1.calculateFine()}")
+
+    println("\n--- SISTEM PERPUSTAKAAN ---")
+
+    print("Masukkan Judul Buku: ")
+    val bookTitle = scanner.nextLine() // Mengambil input judul
+
+    print("Masukkan Nama Peminjam: ")
+    val borrower = scanner.nextLine() // Mengambil input peminjam
+
+    print("Masukkan Lama Pinjam (Hari): ")
+    var durationInput = scanner.nextInt() // Mengambil input durasi
+    scanner.nextLine() // Bersihkan buffer newline
+
+    // Validasi: Lama pinjam tidak boleh minus
+    if (durationInput < 0) {
+        println("INFO: Lama pinjam tidak valid. Otomatis diatur ke 1 hari.")
+        durationInput = 1 // Otomatis ubah menjadi 1 hari
+    }
+
+    // Buat objek Loan
+    val pinjamanBaru = Loan(bookTitle, borrower, durationInput)
+
+    // Print detail peminjaman dan Total Dendanya
+    println("\n--- DETAIL PEMINJAMAN ---")
+    println("Peminjam: ${pinjamanBaru.borrower}")
+    println("Buku    : ${pinjamanBaru.bookTitle}")
+    println("Durasi  : ${pinjamanBaru.loanDuration} hari")
+    println("Denda   : Rp${pinjamanBaru.calculateFine()}")
 }

@@ -8,6 +8,12 @@ fun main() {
     e.salary = 5000
     println("Gaji ${e.name}: ${e.salary}")
 
-    e.salary = -1000
-    println("Gaji ${e.name} setelah input negatif: ${e.salary}")
+    println("\n--- Test Private & Encapsulation ---")
+
+    // Mencoba memanggil e.performanceRating akan ERROR karena bersifat private
+    // e.performanceRating = 5
+
+    e.printStatus() // Melihat status awal
+    e.increasePerformance() // Meningkatkan rating melalui fungsi publik
+    e.printStatus() // Melihat status setelah ditingkatkan
 }

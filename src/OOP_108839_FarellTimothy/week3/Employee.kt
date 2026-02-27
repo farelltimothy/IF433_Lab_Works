@@ -11,19 +11,21 @@ class Employee(val name: String) {
             }
         }
 
+    val tax: Double
+        get() = salary * 0.1
+
     private var performanceRating: Int = 3
 
     fun increasePerformance() {
-        performanceRating++
-        println("Kinerja $name meningkat! Rating: $performanceRating")
+        if (performanceRating < 5) {
+            performanceRating++
+            println("Kinerja $name meningkat! Rating: $performanceRating")
+        } else {
+            println("Rating $name sudah maksimal!")
+        }
     }
 
     fun printStatus() {
         println("Karyawan: $name, Rating: $performanceRating")
     }
-
-    // --- TAMBAHKAN KODE INI (LANGKAH 5) ---
-    // Tax (Pajak) dihitung 10% dari gaji saat ini
-    val tax: Double
-        get() = salary * 0.1
 }

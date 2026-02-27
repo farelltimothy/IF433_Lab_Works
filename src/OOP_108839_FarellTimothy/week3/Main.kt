@@ -3,21 +3,18 @@ package OOP_108839_FarellTimothy.week3
 fun main() {
     val e = Employee("Budi")
 
-    println("--- Testing Salary Validation ---")
-    e.salary = -1000
-    println("Gaji setelah error: ${e.salary}")
+    // LANGKAH 6: Komentari atau hapus baris simulasi error
+    // e.salary = -1000  <-- Ini yang di-cleanup
 
     e.salary = 5000000
-    println("Gaji normal: ${e.salary}")
+    println("Gaji: ${e.salary}")
 
-    println("\n--- Testing Performance ---")
-    e.printStatus()
     e.increasePerformance()
 
+    // Menampilkan pajak (Computed Property)
+    println("Pajak: ${e.tax}")
 
-    println("\n--- Testing Computed Property ---")
-    println("Pajak (10%): ${e.tax}")
-
+    // Sisa kode lainnya (Weapon/Player) tetap dibiarkan
     println("\n--- TASK 3: IMPLEMENTASI PLAYER ---")
     val player = Player("Farell")
     player.addXp(50)

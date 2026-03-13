@@ -21,8 +21,14 @@ fun main() {
 
     println("\n=== SMART HOME SYSTEM STARTING ===")
 
-    // 1. Instansiasi Perangkat (Checkpoint 19)
     val lampuTamu = SmartLamp("L01", "Ruang Tamu")
     val speakerDapur = SmartSpeaker("S01", "Google Nest Dapur")
     val cctvGarasi = SmartCCTV("C01", "Ezviz Garasi")
+
+    val myHub = SmartHomeHub()
+    myHub.addDevice(lampuTamu)
+    myHub.addDevice(speakerDapur)
+    myHub.addDevice(cctvGarasi)
+    myHub.activateSecurityMode()
+    myHub.turnOffAllSwitches()
 }

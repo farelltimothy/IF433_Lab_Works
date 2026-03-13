@@ -1,6 +1,7 @@
 package oop_108839_FarellTimothy.week06
 
 class SmartHomeHub {
+    // List untuk menampung semua perangkat (Polymorphism)
     val devices = mutableListOf<SmartDevice>()
 
     fun addDevice(device: SmartDevice) {
@@ -14,22 +15,22 @@ class SmartHomeHub {
             // Smart Casting menggunakan keyword 'is'
             if (device is Switchable) {
                 device.turnOff()
+            }
+        }
+    }
 
-                fun activateSecurityMode() {
-                    println("\n[Sistem]: MENGAKTIFKAN MODE KEAMANAN!")
-                    for (device in devices) {
-                        // Jika perangkat bisa merekam
-                        if (device is Recordable) {
-                            device.startRecord()
-                        }
+    fun activateSecurityMode() {
+        println("\n[Sistem]: MENGAKTIFKAN MODE KEAMANAN!")
+        for (device in devices) {
+            // Jika perangkat bisa merekam
+            if (device is Recordable) {
+                device.startRecord()
+            }
 
-                        // Khusus SmartSpeaker, putar sirine
-                        if (device is SmartSpeaker) {
-                            device.playMusic("Sirine Peringatan")
+            // Khusus SmartSpeaker, putar sirine
+            if (device is SmartSpeaker) {
+                device.playMusic("Sirine Peringatan")
             }
         }
     }
 }
-
-
-

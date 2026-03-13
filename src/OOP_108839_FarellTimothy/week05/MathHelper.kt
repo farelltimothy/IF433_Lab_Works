@@ -1,4 +1,4 @@
-package oop_108839_FarellTimothy.week06
+package oop_108839_FarellTimothy.week05
 
 class MathHelper {
 

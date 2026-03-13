@@ -44,5 +44,12 @@ fun main() {
     for (metode in daftarPembayaran) {
         // Memanggil fungsi abstract yang sudah di-override
         metode.processPayment(75000.0)
+        if (metode is EWallet) {
+            println("=> Saldo kurang? Melakukan top up otomatis...")
+            metode.topUp(50000.0) // Memanggil fungsi spesifik EWallet
+            println("=> Mencoba pembayaran lagi:")
+            metode.processPayment(75000.0)
+        }
+        println("------------------------------")
     }
 }

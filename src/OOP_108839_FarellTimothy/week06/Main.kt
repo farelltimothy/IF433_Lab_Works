@@ -18,4 +18,11 @@ fun main() {
     println("\n=== TESTING CHECKOUT ===")
     processCheckout(pay1, 50000.0)
     processCheckout(pay2, 150000.0)
+
+    println("\n=== SMART HOME SYSTEM STARTING ===")
+
+    // 1. Instansiasi Perangkat (Checkpoint 19)
+    val lampuTamu = SmartLamp("L01", "Ruang Tamu")
+    val speakerDapur = SmartSpeaker("S01", "Google Nest Dapur")
+    val cctvGarasi = SmartCCTV("C01", "Ezviz Garasi")
 }

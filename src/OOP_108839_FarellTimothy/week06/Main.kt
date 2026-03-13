@@ -14,6 +14,7 @@ fun main() {
                 println("=> Terdeteksi sebagai Dosen (NIDN: ${pegawai.nidn})")
                 pegawai.mengajar() // Smart cast! Tidak perlu manual casting (as)
             }
+
             is Admin -> {
                 println("=> Terdeteksi sebagai Admin")
                 pegawai.doAdminWork()
@@ -32,5 +33,16 @@ fun main() {
 
         val luasLingkaran = mathHelper.hitungLuas(7.0)
         println("Luas Lingkaran (jari-jari 7.0): $luasLingkaran")
-        }
     }
+
+    val myEWallet = EWallet("Farell Pay", 50000.0)
+    val myCreditCard = CreditCard("Farell Card", 100000.0)
+
+    // Memasukkan ke dalam List bertipe Parent (PaymentMethod)
+    val daftarPembayaran: List<PaymentMethod> = listOf(myEWallet, myCreditCard)
+
+    for (metode in daftarPembayaran) {
+        // Memanggil fungsi abstract yang sudah di-override
+        metode.processPayment(75000.0)
+    }
+}

@@ -1,4 +1,4 @@
-package oop_108839-FarellTimothy.week05
+package oop_108839_FarellTimothy.week06
 
 fun main() {
     val dosen1 = Dosen("Pak Alex", "0123456")
@@ -20,5 +20,17 @@ fun main() {
             }
         }
         println("------------------------------")
+
+        println("\n=== PENGUJIAN MATHHELPER (OVERLOADING) ===")
+        val mathHelper = MathHelper()
+
+        val luasPersegi = mathHelper.hitungLuas(5)
+        println("Luas Persegi (sisi 5): $luasPersegi")
+
+        val luasPersegiPanjang = mathHelper.hitungLuas(10, 5)
+        println("Luas Persegi Panjang (10x5): $luasPersegiPanjang")
+
+        val luasLingkaran = mathHelper.hitungLuas(7.0)
+        println("Luas Lingkaran (jari-jari 7.0): $luasLingkaran")
+        }
     }
-}

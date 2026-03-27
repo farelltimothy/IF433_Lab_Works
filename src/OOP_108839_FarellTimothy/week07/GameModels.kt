@@ -1,4 +1,9 @@
-package OOP_108839_FarellTimothy.week07
+package oop_108839_FarellTimothy.week07
 
-class GameModels {
+enum class ItemRarity(val dropChance: Int) {
+    COMMON(70),
+    UNCOMMON(30),
+    RARE(15),
+    EPIC(5),
+    LEGENDARY(1)
 }

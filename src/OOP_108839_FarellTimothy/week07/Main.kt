@@ -47,6 +47,20 @@ fun main() {
 
     GameManager.startGame()
     GameManager.startGame()
+
+    println("\n=== TEST RARITY & FACTORY ===")
+
+    // 1. Cetak nilai drop chance dari Enum
+    println("Drop chance Legendary: ${ItemRarity.LEGENDARY.dropChance}%")
+
+    // 2. Gunakan factory untuk membuat senjata awal
+    val startingWeapon = Weapon.forgeStarterSword()
+
+    // 3. Cetak detail senjatanya
+    println("Senjata Baru: ${startingWeapon.item.name}")
+    println("Rarity: ${startingWeapon.item.rarity}")
+    println("Damage: ${startingWeapon.item.damage}")
+    println("Durability: ${startingWeapon.durability}")
 }
 
 

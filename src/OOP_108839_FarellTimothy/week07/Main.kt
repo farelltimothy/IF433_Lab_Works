@@ -42,5 +42,11 @@ fun main() {
     }
 
     println(uiMessage)
+
+    println("\n=== TEST RPG GAME MANAGER (SINGLETON) ===")
+
+    GameManager.startGame()
+    GameManager.startGame()
 }
+
 

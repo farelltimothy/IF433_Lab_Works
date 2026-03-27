@@ -1,0 +1,248 @@
+[33mcommit f31160b2f146158cad220789874ccf3852cecc26[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 27 11:15:24 2026 +0700
+
+    week07: test Singleton and Companion Object in main
+
+[33mcommit 7c73979bc94820088e4f84ab98f06a8685310e50[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 27 11:13:51 2026 +0700
+
+    week07: implement companion object as factory in NetworkClient
+
+[33mcommit c4903b8eb27268ab7467b7a90623eb8651e17311[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 27 11:10:38 2026 +0700
+
+    week07: (trial) trigger private constructor error on NetworkClient
+
+[33mcommit 94d73c62db06944f980d0233eb026c83c00692d5[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 27 11:05:15 2026 +0700
+
+    week07: create singleton DatabaseManager
+
+[33mcommit 054d947df5ec4b9af9055c2a0a473e8745c7abb2[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:41:57 2026 +0700
+
+    week06: (task) test smart home system logic in main
+
+[33mcommit f691faaefa051cc9fc031a35162dab34059fc487[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:41:05 2026 +0700
+
+    week06: (task) instantiate smart devices in main
+
+[33mcommit b99046663631588e21f03562e1b54244f0a8bdd2[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:38:53 2026 +0700
+
+    week06: (task) implement advanced smart casting in Hub
+
+[33mcommit 55f89bc0d92e1fade452131c3f2ab626b7009156[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:37:34 2026 +0700
+
+    week06: (task) create SmartHomeHub logic
+
+[33mcommit 299bce72831745f4dd6919323b2a7cba5b8f3193[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:33:05 2026 +0700
+
+    week06: (task) create SmartCCTV with compound interfaces
+
+[33mcommit fb8cf6251260c41ce4ab09128e0fef37ee756347[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:30:59 2026 +0700
+
+    week06: (task) create SmartSpeaker
+
+[33mcommit 3c156391b01b4242cff1f913e442dd5f95c22e0b[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:28:22 2026 +0700
+
+    week06: (task) create SmartLamp
+
+[33mcommit 9b1557874b82b140a4022fb49313820f70f9fae0[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:27:05 2026 +0700
+
+    week06: (task) create smart home interfaces
+
+[33mcommit 22e3d2ce507f76f3164d9c82e5ecdfee5f9e6ee4[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:16:39 2026 +0700
+
+    week06: implement decoupled processCheckout in main
+
+[33mcommit f17c87fff580a464e85cdfb3b54909e5f067da9d[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:14:15 2026 +0700
+
+    week06: create Gopay and CreditCard
+
+[33mcommit 0616aebe6582b1f5bc605c9804ede74c81a8e921[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:13:37 2026 +0700
+
+    week06: create PaymentMethod contract
+
+[33mcommit 0c0e89abdf16f4e0f7feb399ae5e208e418a5b52[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:12:08 2026 +0700
+
+    week06: fix diamond problem using explicit super delegation
+
+[33mcommit 374a2d2283c071addc8bc2294e45ad8852f26428[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:11:11 2026 +0700
+
+    week06: (trial) trigger the diamond problem compiler error
+
+[33mcommit 3f85631c9ae2400109ea2a79f5742d7ffa40decd[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:09:20 2026 +0700
+
+    week06: create Camera and Phone interfaces with default methods
+
+[33mcommit 655d9d1d148d5d4d18647e98563ce78fe22ec0e6[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:07:51 2026 +0700
+
+    week06: create Smartwatch with multiple implementations
+
+[33mcommit 2726afb9a54ba9d68834a2e6a7bfb40a6e1d3e19[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:05:55 2026 +0700
+
+    week06: create compound interfaces
+
+[33mcommit a2d3bc38f509fc257ed60e5fda79e0d6622abe7f[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:03:41 2026 +0700
+
+    week06: create Watch abstract class
+
+[33mcommit ac288750fc1f37cb7a32633e46b729727191b609[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:02:16 2026 +0700
+
+    week06: create Button class implementing Clickable
+
+[33mcommit 4e5cf412341ee8e015ee5089d0073e57286aaaae[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 12:00:29 2026 +0700
+
+    week06: fix Clickable interface using abstract property
+
+[33mcommit a1e2c3ee3b5846617f2cce7bb7dbdefbdc96169d[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:59:28 2026 +0700
+
+    week06: (trial) create Clickable interface with backing field error
+
+[33mcommit 2b7ebda05205855a96c6c416885a048c136a1b08[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:50:10 2026 +0700
+
+    refactor: rename package and folder from week06 to week05
+
+[33mcommit 78ea3b7684660f1e342fc98aed652c5ba68f44e8[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:45:06 2026 +0700
+
+    week05: (task 2) add smart casting for EWallet topUp recovery
+
+[33mcommit 50d137dc1cae8837b4210db1d51fac70ea2854ac[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:44:29 2026 +0700
+
+    week05: (task 2) implement payment polymorphism
+
+[33mcommit bac0840e1b26d5e77c067fd0b0323c917fe83988[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:40:52 2026 +0700
+
+    week05: (task 2) create CreditCard class
+
+[33mcommit 662bf14f8d5a7416c6ff569af84ff19f03634a6c[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:39:56 2026 +0700
+
+    week05: (task 2) create EWallet class
+
+[33mcommit aa7cf303101b4843fba48f5aec8b6aa4f6e84a9f[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:36:18 2026 +0700
+
+    week05: (task 2) create abstract PaymentMethod
+
+[33mcommit 00776eb8ed035ccba3a690f80dae9aab466ae21e[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:31:32 2026 +0700
+
+    week05: (task 1) test MathHelper overloading in main
+
+[33mcommit b6b2006e320d211ed23d0d62b33dca7ffe9903ba[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:20:37 2026 +0700
+
+    week05: (task 1) create MathHelper class with overloading
+
+[33mcommit ff9ff36c49771a9f0558366bc4c1c35d9bd3b9cf[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 11:18:31 2026 +0700
+
+    week05: implement polymorphic collection and smart casting
+
+[33mcommit aaef0736de5c2f30c8a9c85d1bd3b2099f9e918e[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 10:51:56 2026 +0700
+
+    week05: create Admin class inheriting Pegawai
+
+[33mcommit c0b84da760b48af6172bad2e07ae7144864ce53d[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Mar 13 10:48:47 2026 +0700
+
+    week05: create Dosen class inheriting Pegawai
+
+[33mcommit 27f4c6a2ed0e693867103d64f5c676c64dc4e87e[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Feb 27 11:13:12 2026 +0700
+
+    week05: create abstract class Pegawai
+
+[33mcommit b74fdfcd795839a693afc649c4d18417bf22f2a0[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Feb 27 11:13:12 2026 +0700
+
+    week04: (task 2) test Employee hierarchy in main
+
+[33mcommit 22d8725062a7fb72fb68c14b5225b94dd9c369be[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Feb 27 11:12:00 2026 +0700
+
+    week04: (task 2) create Developer class
+
+[33mcommit 8c880c7e2b5d213cf862ee8fd474075eb1ac085f[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Feb 27 11:10:17 2026 +0700
+
+    week04: (task 2) create Manager class overriding Employee
+
+[33mcommit ee1e3853c1161b421e737dbcf75b7d05790820f7[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Feb 27 11:09:10 2026 +0700
+
+    week04: (task 2) create parent class Employee
+
+[33mcommit 974a7c24d704bac4ba43d9fbb4d0c459e7286761[m
+Author: farelltimo <farelltimothy@gmail.com>
+Date:   Fri Feb 27 11:07:52 2026 +0700
+
+    week04: (task 1) test ElectricCar in main
+
+[33mcommit 6d1efa318561edc57cff82166ded3a3661bb92dd[m
+Author: farelltimo <far

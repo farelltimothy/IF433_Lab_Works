@@ -15,14 +15,9 @@ fun main() {
     println("Total Logs: ${tradeHistory.size}")
 
     val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
-
     val winningTrades = closedTrades.filter { it.roe > 0 }
 
-    val losingTrades = closedTrades.filter { it.roe <= 0 }
-
-    // Print untuk verifikasi hasil
     println("--- Statistics ---")
     println("Closed Trades: ${closedTrades.size}")
-    println("Winning Trades: ${winningTrades.size}")
-    println("Losing Trades: ${losingTrades.size}")
+    println("Winning Trades Count: ${winningTrades.size}")
 }

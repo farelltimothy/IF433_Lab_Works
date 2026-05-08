@@ -42,4 +42,13 @@ fun main() {
         println("Total Konsumsi Daya: $totalPower Watt")
         println("------------------------------------")
     }
+
+    println("\n=== POWER CALCULATION ===")
+    // Menggunakan run untuk mengeksekusi iterasi sumOf
+    val totalPower = homeDevices.run {
+        sumOf { it.powerLoad }
     }
+
+    println("Total penggunaan daya saat ini: $totalPower Watt")
+}
+

@@ -10,4 +10,6 @@ fun main() {
     // Lambda dengan satu parameter bisa menggunakan implicit 'it'
     val squareImplicit: (Int) -> Int = { it * it }
     println("Hasil Square: ${squareImplicit(4)}")
+
+    
 }

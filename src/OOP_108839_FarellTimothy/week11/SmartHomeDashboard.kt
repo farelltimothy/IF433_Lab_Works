@@ -34,10 +34,12 @@ fun main() {
         println(it.diagnose())
     }
 
-    println("\n=== SUMMARY REPORT ===")
+    println("\n=== SMART HOME DASHBOARD SUMMARY ===")
     with(homeDevices) {
         val totalPower = sumOf { it.powerLoad }
-        println("Total Perangkat Terpasang: $size")
-        println("Estimasi Total Beban Daya: $totalPower Watt")
+        println("Status Sistem: AKTIF")
+        println("Jumlah Perangkat Terkoneksi: ${this.size}")
+        println("Total Konsumsi Daya: $totalPower Watt")
+        println("------------------------------------")
     }
-}
+    }

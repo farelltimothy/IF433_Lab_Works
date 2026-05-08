@@ -43,11 +43,21 @@ fun main() {
     val toxicData: String? = null
 
     try {
-        // DANGEROUS: Memaksa compiler percaya data ini tidak null
         val length = toxicData!!.length
         println("Panjang data: $length")
     } catch (e: NullPointerException) {
         println("CRASH (NPE)! Jangan gunakan !! secara sembarangan.")
+    }
+
+    println("\n=== TEST REQUIRE NOT NULL ===")
+    val apiResponse: Map<String, String?> = mapOf("status" to "200", "token" to null)
+
+    try {
+        val token = requireNotNull(apiResponse["token"]) {
+            "CRITICAL EXCEPTION: Token otentikasi tidak ditemukan dari server!"
+        }
+    } catch (e: IllegalArgumentException) {
+        println(e.message) // Mencetak pesan custom kita, bukan crash buta
     }
 }
 

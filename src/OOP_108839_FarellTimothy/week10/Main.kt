@@ -20,4 +20,13 @@ fun main() {
 
     // Mencetak properti key dan value dari PairBox
     println("Aset: ${itemPrice.key}, Harga: ${itemPrice.value} USD")
+
+    println("\n=== TEST GENERIC FUNCTIONS ===")
+
+    // Menguji printData dengan tipe Double
+    printData(3.14)
+
+    // Menguji processData dengan tipe String dan menyimpan hasilnya
+    val result = processData("Stable Coin")
+    println("Hasil proses: $result")
 }

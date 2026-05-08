@@ -30,10 +30,13 @@ fun main() {
     for (item in mixedData) {
         val text = item as? String
 
-        // Hanya cetak jika cast sukses (text tidak null)
         text?.let {
             println("Ditemukan teks: ${it.uppercase()}")
         }
     }
+
+    val someObject: Any = 100
+    val safeString = someObject as? String ?: "Unknown String"
+    println("Hasil cast + fallback: $safeString")
 }
 

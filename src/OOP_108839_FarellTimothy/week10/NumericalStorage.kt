@@ -14,4 +14,20 @@ fun main() {
     println("Hasil Sum Int: ${intMath.sum()}")
     println("Hasil Sum Double: ${doubleMath.sum()}")
 
+
+
+    fun <T> getMax(a: T, b: T): T where T : Comparable<T> {
+        return if (a > b) a else b
+    }
+
+    fun main() {
+        // Testing getMax dengan angka
+        val maxInt = getMax(50, 100)
+        println("Nilai terbesar (Int): $maxInt")
+
+        // Testing getMax dengan teks (Alfabetis)
+        val maxString = getMax("Apple", "Zebra")
+        println("Nilai terbesar (String): $maxString")
+    }
+
 }

@@ -56,5 +56,17 @@ fun main() {
     topPerformersString.forEach {
         println(it)
     }
+
+    // Menampilkan Sisa Dashboard
+    println("\n=== WORST PERFORMERS ===")
+    // Gunakan forEach untuk mencetak setiap baris kerugian
+    worstPerformersString.forEach {
+        println(it)
+    }
+
+    // Cetak daftar koin unik yang sudah dikumpulkan di CP 17
+    println("\n=== UNIQUE PAIRS TRADED ===")
+    println(uniquePairs)
 }
+
 

@@ -20,4 +20,19 @@ class ApiParser {
             else -> null
         }
     }
+
+    fun checkout(product: Product) {
+        val id = when (product) {
+            is Electronic -> product.id
+            is Clothing -> product.id
+        }
+
+        // Memanggil Java service
+        val rawTransactionId = JavaPaymentService.processPayment(id)
+
+        // WAJIB: Gunakan !! karena kita yakin Java service selalu berhasil (interop)
+        val finalTransactionId = rawTransactionId!!
+
+        println("Transaction ID: $finalTransactionId")
+    }
 }

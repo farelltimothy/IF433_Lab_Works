@@ -70,6 +70,14 @@ fun main() {
 
     runMockUnitTest()
 
+    println("\n=== TEST TUGAS MANDIRI ===")
+    val parser = ApiParser()
+    val rawData = mapOf("type" to "ELECTRONIC", "id" to "LAP-99", "name" to "MacBook Pro")
+
+    val parsedProduct = parser.parseProduct(rawData)
+    parsedProduct?.let {
+        parser.checkout(it)
+    }
 
 }
 

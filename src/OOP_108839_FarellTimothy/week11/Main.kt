@@ -1,10 +1,21 @@
 package oop_108839_FarellTimothy.week11
 
 fun main() {
-    println("=== TEST EXTENSION FUNCTIONS ===")
-    println("Alex".addGreeting())
-    println("Hi".repeatTimes(3))
+    println("=== TEST LET FUNCTION ===")
+    val name: String? = "Alexander"
 
-    val text: String? = null
-    println("Apakah null/empty? ${text.isNullOrEmptyCustom()}")
+    val length = name?.let {
+        println("Nama terdeteksi: $it")
+        it.length
+    }
+
+    println("Panjang nama: $length")
+
+    println("\n=== TEST RUN FUNCTION ===")
+    // Tambahkan ?: 0 agar length tidak nullable lagi
+    val result = "Kotlin".run {
+        println("Memproses kata: ${this}")
+        (length ?: 0) * 2
+    }
+    println("Hasil kalkulasi run: $result")
 }

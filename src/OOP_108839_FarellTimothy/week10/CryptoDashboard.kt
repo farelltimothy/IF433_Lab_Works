@@ -3,29 +3,17 @@ package oop_108839_FarellTimothy.week10
 fun main() {
     val coinRepo = WalletRepository<Coin>()
 
-    val btc = Coin("BTC", 0.5)
-    val eth = Coin("ETH", 10.0)
-    val usdt = Coin("USDT", 5000.0)
+    coinRepo.add(Coin("BTC", 0.5))
+    coinRepo.add(Coin("ETH", 10.0))
+    coinRepo.add(Coin("USDT", 5000.0))
 
-    coinRepo.add(btc)
-    coinRepo.add(eth)
-    coinRepo.add(usdt)
+    // Simulasi Response Jaringan (Checkpoint 17)
+    val response = ApiResponse("200 OK", coinRepo.getAll())
 
-    val allCoins = coinRepo.getAll()
-    val response = ApiResponse("Success", allCoins)
-
-    println("=== CRYPTO WALLET DASHBOARD ===")
-    println("Status: ${response.status}")
-    println("Daftar Aset Dompet:")
-    response.data.forEach {
-        println("- ${it.name}: ${it.balance}")
-    }
-
-    println("\n=== MENCARI ASET ===")
-    val searchResult = coinRepo.searchByName("USDT")
-    if (searchResult != null) {
-        println("Aset ditemukan: $searchResult")
-    } else {
-        println("Aset tidak ditemukan.")
+    println("=== NETWORK RESPONSE SIMULATION ===")
+    println("Status Code: ${response.status}")
+    println("Payload Data:")
+    response.data.forEach { coin ->
+        println("-> Aset: ${coin.name}, Saldo: ${coin.balance}")
     }
 }

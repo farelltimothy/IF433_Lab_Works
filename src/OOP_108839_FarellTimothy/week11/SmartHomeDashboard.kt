@@ -33,4 +33,11 @@ fun main() {
         println("Perangkat Ditemukan:")
         println(it.diagnose())
     }
+
+    println("\n=== SUMMARY REPORT ===")
+    with(homeDevices) {
+        val totalPower = sumOf { it.powerLoad }
+        println("Total Perangkat Terpasang: $size")
+        println("Estimasi Total Beban Daya: $totalPower Watt")
+    }
 }

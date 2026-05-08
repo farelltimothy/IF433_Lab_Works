@@ -48,4 +48,13 @@ fun main() {
 
     println("\n=== UNIQUE TRADING PAIRS ===")
     println("Pairs traded: $uniquePairs")
+
+    // Menampilkan Dashboard Utama
+    println("\n=== CRYPTO TRADING DASHBOARD ===")
+
+    // Menggunakan forEach untuk mencetak semua baris profit dari topPerformersString
+    topPerformersString.forEach {
+        println(it)
+    }
 }
+

@@ -7,6 +7,11 @@ class MathBox<T : Number>(val value1: T, val value2: T) {
     }
 }
 
+
+fun <T> getMax(a: T, b: T): T where T : Comparable<T> {
+    return if (a > b) a else b
+}
+
 fun main() {
     val intMath = MathBox(10, 20)
     val doubleMath = MathBox(5.5, 4.5)
@@ -16,9 +21,6 @@ fun main() {
 
 
 
-    fun <T> getMax(a: T, b: T): T where T : Comparable<T> {
-        return if (a > b) a else b
-    }
 
     fun main() {
         // Testing getMax dengan angka

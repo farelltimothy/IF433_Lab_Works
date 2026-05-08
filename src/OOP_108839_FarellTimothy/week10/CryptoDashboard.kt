@@ -28,3 +28,5 @@ fun main() {
         println("ID Transaksi: ${tx.id}, Jumlah: ${tx.amount}")
     }
 }
+
+//tes run

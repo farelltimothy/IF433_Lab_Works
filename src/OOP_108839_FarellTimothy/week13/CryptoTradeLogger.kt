@@ -43,3 +43,14 @@ fun loadTrades(path: String): List<TradeRecord> {
         emptyList()
     }
 }
+
+fun main() {
+    val simulatedTrades = listOf(
+        TradeRecord(id = 1, symbol = "BTCUSDT", type = "Long", margin = 150.0, pnl = 45.2),
+        TradeRecord(id = 2, symbol = "ETHUSDT", type = "Short", margin = 100.0, pnl = -12.5),
+        TradeRecord(id = 3, symbol = "SOLUSDT", type = "Long", margin = 75.0, pnl = 18.8)
+    )
+
+    saveTrades(simulatedTrades, "crypto_trades.csv")
+    println("Simulasi data awal transaksi berhasil disimpan ke csv.")
+}

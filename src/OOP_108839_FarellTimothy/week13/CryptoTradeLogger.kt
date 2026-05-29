@@ -57,7 +57,7 @@ fun main() {
     File("crypto_trades.csv").appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
     println("Data korup berhasil di-inject ke dalam file.")
 
-    val loadedData = loadTrades("crypto_trades.csv")
+    val loadedData = loadTrades("crypto_trades.csv") //ini cp 19
     val totalPnl = loadedData.sumOf { it.pnl }
     println("Total PnL Bersih: $totalPnl")
 }

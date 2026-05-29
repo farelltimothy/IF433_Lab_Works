@@ -31,9 +31,3 @@ fun fromCsvTrade(line: String): TradeRecord? {
 fun saveTrades(trades: List<TradeRecord>, path: String) {
     File(path).writeText(trades.joinToString("\n") { it.toCsv() })
 }
-
-fun loadTrades(path: String): List<TradeRecord> {
-    val file = File(path)
-    if (!file.exists()) return emptyList()
-    return file.readLines().mapNotNull { fromCsvTrade(it) }
-}

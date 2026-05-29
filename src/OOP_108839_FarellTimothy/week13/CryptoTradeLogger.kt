@@ -53,4 +53,11 @@ fun main() {
 
     saveTrades(simulatedTrades, "crypto_trades.csv")
     println("Simulasi data awal transaksi berhasil disimpan ke csv.")
+
+    File("crypto_trades.csv").appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
+    println("Data korup berhasil di-inject ke dalam file.")
+
+    val loadedData = loadTrades("crypto_trades.csv")
+    val totalPnl = loadedData.sumOf { it.pnl }
+    println("Total PnL Bersih: $totalPnl")
 }

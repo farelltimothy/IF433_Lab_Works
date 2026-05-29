@@ -1,6 +1,7 @@
-package OOP_108839_FarellTimothy.week12 // Sesuaikan ke week13 jika mengikuti folder baru kamu
+package OOP_108839_FarellTimothy.week13
 
 import java.io.File
+import java.io.FileNotFoundException
 
 data class TradeRecord(
     val id: Int,
@@ -29,5 +30,16 @@ fun fromCsvTrade(line: String): TradeRecord? {
 }
 
 fun saveTrades(trades: List<TradeRecord>, path: String) {
-    File(path).writeText(trades.joinToString("\n") { it.toCsv() })
+    File(path).printWriter().use { writer ->
+        trades.forEach { writer.println(it.toCsv()) }
+    }
+}
+
+fun loadTrades(path: String): List<TradeRecord> {
+    return try {
+        File(path).readLines().mapNotNull { fromCsvTrade(it) }
+    } catch (e: FileNotFoundException) {
+        println("Error: File histori transaksi tidak ditemukan!")
+        emptyList()
+    }
 }

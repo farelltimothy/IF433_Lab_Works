@@ -1,4 +1,4 @@
-package OOP_108839_FarellTimothy.week13
+package OOP_108839_FarellTimothy.week12 // Sesuaikan ke week13 jika mengikuti folder baru kamu
 
 import java.io.File
 
@@ -26,4 +26,14 @@ fun fromCsvTrade(line: String): TradeRecord? {
         println("(Log) Data korup diabaikan: $line")
         null
     }
+}
+
+fun saveTrades(trades: List<TradeRecord>, path: String) {
+    File(path).writeText(trades.joinToString("\n") { it.toCsv() })
+}
+
+fun loadTrades(path: String): List<TradeRecord> {
+    val file = File(path)
+    if (!file.exists()) return emptyList()
+    return file.readLines().mapNotNull { fromCsvTrade(it) }
 }
